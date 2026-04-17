@@ -1,0 +1,6 @@
+{
+    "/": {
+        "title": "Dokumentation",
+        "text": "Dokumentation \n   \n   \n Card Titl Lorem ipsum dolor sit amet,  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n   \n   \n Card Title Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+}
