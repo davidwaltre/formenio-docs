@@ -1,0 +1,102 @@
+{
+    "/": {
+        "title": "Startseite",
+        "text": "Startseite Hier findest Du hilfreiche Tipps und Anleitungen rund um Formenio. Du kannst bei \"Formular erstellen\" beginnen, oder suche Dir hier eins der folgenden häufig genutzten Themen aus. Logge dich ein! Um die Links in der Dokumentation nutzen zu können, logge dich ein, bevor du mit der Bearbeitung beginnst. Zum Login Formular erstellen Analytics Dein Thema ist nicht dabei oder du brauchst weitere Hilfe? Support"
+    },
+    "/dokumentation/formular-erstellen/": {
+        "title": "Formular erstellen",
+        "text": "Formular erstellen Gehe im  Dashboard  auf die Seite  Formulare →  Alle Anzeigen Hier findest Du all deine Formulare und kannst ein neues mit Klick auf  \"Neues Formular\"  (oben rechts) ein neues Formular anlegen. Gib als nächstes den Namen Deines neuen Formulars ein, optional eine Beschreibung und klicke auf  \"Erstellen\" . Somit hast Du ein neues Formular erstellt, welches an erster Position in deiner Formularübersicht zu finden ist. Tipp: Finde Formulare auch über das Suchfeld \"Formular suchen...\". Formulare werden nach der letzten Bearbeitung sortiert angezeigt. Du kannst ein bestehendes Formular auch duplizieren, indem Du auf den Button neben \"Löschen\" klickst."
+    },
+    "/dokumentation/formular-bearbeiten/formularbearbeitung/": {
+        "title": "Formularbearbeitung",
+        "text": "Formularbearbeitung Um ein Formular zu bearbeiten klicke bei dem jeweiligen Formular (auf der Seite Formulare →  Alle Anzeigen ) auf \"Bearbeiten\". Dies ist die  Formularbearbeitung. Du erkennst dein Formular an dem Titel oben. Hast Du Änderungen durchgeführt, musst Du diese speichern, wenn Du sie behalten willst. Um alle Änderungen seit dem Aufrufen bzw. letzten Speichern zurückzusetzen, nutze \"Verwerfen\". Tipp: Auch gelöschte Felder kannst Du mit \"Verwerfen\" wiederherstellen, solange Du seit dem Löschen nicht gespeichert hast Ein möglicher Ablauf der Bearbeitung eines neuen Formulars: Felder und Seiten hinzufügen  und  Felder bearbeiten Grundeinstellungen  setzen Formular teilen - beispielsweise  als QR-Code"
+    },
+    "/dokumentation/formular-bearbeiten/grundeinstellungen/": {
+        "title": "Grundeinstellungen",
+        "text": "Grundeinstellungen Die Grundeinstellungen, um Dein Formular zu nutzen, sind hier aufgelistet. Eine Detailliertere Auflistung aller Einstellungen findest du unter  Erweiterte Einstellungen . 0 Einstellungen aufrufen Um die nachfolgenden Einstellungen zu setzen, öffne die  Formulareinstellungen . Dies kannst du oben rechts mit dem Button  \"Einstellungen\" . 1 Formular öffentlich machen Direkt nach Erstellung ist Dein Formular nicht öffentlich aufrufbar. Nur Du kannst die Vorschau nutzen um Dein Formular vorab zu sehen. Um dies zu ändern, stelle die erste  Einstellung \"Öffentlich\"  auf  an . Durch verändern dieser Einstellung wird niemals etwas gelöscht, sie steuert lediglich die Aufrufbarkeit. 2 Fortschrittsanzeige Besteht Dein Formular aus mehr als einer Seite, wird NutzerInnen standardmäßig ein Fortschrittsbalken ganz oben angezeigt. Dies kontrollierst Du mit der  Einstellung \"Fortschritt anzeigen\" . 3 Buttontext ändern Standardmäßig senden NutzerInnen das Formular ab mit dem Button \"Absenden\". Diesen Text ( Absenden ) kannst Du personalisieren. Scrolle in den Einstellungen weiter nach unten zu der  Einstellung \"Absenden Text\" 4 Anzeige in Socials Teilst Du Dein Formular, ist es  wichtig , den NutzerInnen vorab grobe Informationen zu geben, z.B.  Welches Formular? Um was geht es? Wenn Du das Formular Teilst, beispielsweise bei WhatsApp, wird immer ein kurzer Infotext angezeigt. Wir empfehlen sehr, diesen Text anzupassen. Unter  \"Socials: Titel\" und \"Socials: Beschreibung\"  kannst Du jeweils einen kurzen Text angeben, der angezeigt wird."
+    },
+    "/dokumentation/formular-bearbeiten/styleeinstellungen/": {
+        "title": "Styleeinstellungen",
+        "text": "Styleeinstellungen Die wichtigsten Einstellungen zum Style (Aussehen) Deines Formulars findest Du hier. Eine Detailliertere Auflistung aller Einstellungen findest du unter  Erweiterte Einstellungen . Tipp Nutze die Vorschau (Button \"Vorschau\" in der Formularbearbeitung) um zusehen, wie NutzerInnen Dein Formular sehen werden. Die Ansicht in der Formularbearbeitung direkt dient nur der Bearbeitung. Styleeinstellungen beeinflussen diese Darstellung nicht, diese siehst Du nur in der Vorschau. 1 Styleeinstellungen aufrufen Um die nachfolgenden Einstellungen zu setzen, öffne die  Styleeinstellungen . Dies kannst du oben rechts mit dem Button  \"Style\" . 2 Farben Du kannst die Farben Deines Formulars anpassen. Du hast du Möglichkeit, die  Hintergrundfarbe , die  Buttonfarbe  sowie die  Textfarbe  anzupassen. Tipp: Achte auf eine sehr gute Lesbarkeit Deiner Texte - nutze zum Ansehen die Vorschau 3 Breite Du kannst die  Breite  des Formulars auf der Seite anpassen. Standard ist 45% - immer relativ der Bildschirmbreite bzw. der Breite des Browserfensters. Hierbei ist zu beachten: Auf mobilen Geräten ist die Breite immer 100% In eingebetteten Formularen ( mehr erfahren ) ist die Breite immer 100% 4 Ausrichtung Standardmäßig steht der Inhalt deines Formulars vertikal oben und horizontal mittig. Das heißt, alle Felder und Texte richten sich an dem oberen Fensterrand aus und sind nach links und rechts hin zentriert. Mit der  Einstellung \"Horizontale Ausrichtung\" und \"Vertikale Ausrichtung\"  kannst Du das anpassen."
+    },
+    "/dokumentation/formular-bearbeiten/erweiterte-einstellungen/": {
+        "title": "Erweiterte Einstellungen",
+        "text": "Erweiterte Einstellungen"
+    },
+    "/dokumentation/formular-bearbeiten/felder-und-seiten-hinzufugen/": {
+        "title": "Felder und Seiten hinzufügen",
+        "text": "Felder und Seiten hinzufügen"
+    },
+    "/dokumentation/formular-bearbeiten/felder-anordnen-und-loschen/": {
+        "title": "Felder anordnen und löschen",
+        "text": "Felder anordnen und löschen"
+    },
+    "/dokumentation/formular-bearbeiten/felder-bearbeiten/": {
+        "title": "Felder bearbeiten",
+        "text": "Felder bearbeiten"
+    },
+    "/dokumentation/formular-teilen/als-link-oder-qr-code/": {
+        "title": "Als Link oder QR-Code",
+        "text": "Als Link oder QR-Code"
+    },
+    "/dokumentation/formular-teilen/in-webseite-integrieren/": {
+        "title": "In Webseite integrieren",
+        "text": "In Webseite integrieren"
+    },
+    "/dokumentation/formular-teilen/als-email-teilen/": {
+        "title": "Als Email teilen",
+        "text": "Als Email teilen"
+    },
+    "/dokumentation/formular-teilen/felder-vorausfullen/": {
+        "title": "Felder vorausfüllen",
+        "text": "Felder vorausfüllen"
+    },
+    "/dokumentation/formular-teilen/eigene-subdomain/": {
+        "title": "Eigene Subdomain",
+        "text": "Eigene Subdomain"
+    },
+    "/dokumentation/antworten/ans/": {
+        "title": "Ansehen",
+        "text": "Ansehen"
+    },
+    "/dokumentation/antworten/exportieren/": {
+        "title": "Exportieren",
+        "text": "Exportieren"
+    },
+    "/dokumentation/antworten/loschen/": {
+        "title": "Löschen",
+        "text": "Löschen"
+    },
+    "/dokumentation/workflows/workflow-erstellen/": {
+        "title": "Workflow erstellen",
+        "text": "Workflow erstellen"
+    },
+    "/dokumentation/workflows/aktionen/email-senden/": {
+        "title": "Email senden",
+        "text": "Email senden"
+    },
+    "/dokumentation/workflows/aktionen/feld-updaten/": {
+        "title": "Feld updaten",
+        "text": "Feld updaten"
+    },
+    "/dokumentation/workflows/aktionen/status-setzen/": {
+        "title": "Status setzen",
+        "text": "Status setzen"
+    },
+    "/dokumentation/workflows/aktionen/event-webhook/": {
+        "title": "Event webhook",
+        "text": "Event webhook"
+    },
+    "/dokumentation/analytics/analytics-allgemein/": {
+        "title": "Allgemein",
+        "text": "Allgemein Mit Analytics hast Du ein starkes Tool, das dir hilft zu verstehen, wie Formulare verwendet werden. Natürlich kannst du alles für unterschiedliche Zeiträume ansehen. Du kannst nicht auf individuelle Nutzer zurückschließen. Du kannst  unter anderem  analysieren: Wie viele Aufrufe und Starts hat mein Formular? Wie ist die Konversionsrate? Wie lange ist die durchschnittliche Ausfüllzeit? Welche Felder füllen NutzerInnen am längsten aus? Bei welchen Feldern haben NutzerInnen die meisten Fehler (Validierungsfehler)? Woher kommen NutzerInnen und welche Endgeräte nutzen sie? Mithilfe KI: \t - Wo sind die Schwachstellen meines Formulars? \t - Zusammenfassung der gegebenen Antworten"
+    },
+    "/dokumentation/analytics/analytics-aktivieren/": {
+        "title": "Analytics aktivieren",
+        "text": "Analytics aktivieren Um Daten über Deine Formulare zu sammeln, musst du Analytics aktivieren. Dies kannst du je Formular in der Formularbearbeitung unter  Einstellungen → Analytics aktivieren Nur wenn Analytics aktiviert sind, werden Analysedaten gespeichert. Keine Cookies Wir nutzen zur Analyse der NutzerInnen keine Cookies! Somit bleibt alles auf den Formenio-Servern (Ausnahme bei Verwendung KI-Analyse) und Du musst dich nicht um Datenschutz kümmern."
+    },
+    "/dokumentation/analytics/analytics-funktionen/": {
+        "title": "Funktionen",
+        "text": "Funktionen Analytics bieten Dir viele Funktionen, mit denen Du NutzerInnen-Verhalten betrachten kannst. Wähle unter  Analytics  Dein Formular aus. Oben rechts kannst Du den Zeitraum anpassen, für den Du die Analysedaten sehen willst. Dieser Zeitraum wirkt sich ebenso auf die KI-Funktionen aus."
+    }
+}
