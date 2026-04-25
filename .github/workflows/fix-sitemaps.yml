@@ -1,0 +1,104 @@
+name: Fix Sitemaps
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+
+jobs:
+  fix-sitemaps:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fix sitemap XML structure
+        run: |
+          python3 << 'EOF'
+          import os
+          import xml.etree.ElementTree as ET
+
+          DOCS_DIR = "docs"
+          SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
+          ET.register_namespace("", SITEMAP_NS)
+
+          def fix_sitemap(filepath):
+              """
+              Fixes a sitemap.xml where multiple <loc>/<lastmod> pairs are
+              incorrectly nested inside a single <url> element.
+              Produces one <url> per <loc>.
+              """
+              tree = ET.parse(filepath)
+              root = tree.getroot()
+
+              tag_url     = f"{{{SITEMAP_NS}}}url"
+              tag_loc     = f"{{{SITEMAP_NS}}}loc"
+              tag_lastmod = f"{{{SITEMAP_NS}}}lastmod"
+
+              # Collect all (loc, lastmod) pairs from every <url> block
+              entries = []
+              for url_el in root.findall(tag_url):
+                  locs     = url_el.findall(tag_loc)
+                  lastmods = url_el.findall(tag_lastmod)
+
+                  if len(locs) <= 1:
+                      # Already correct – keep as-is
+                      loc_text     = locs[0].text if locs else ""
+                      lastmod_text = lastmods[0].text if lastmods else ""
+                      entries.append((loc_text, lastmod_text))
+                  else:
+                      # Broken: multiple <loc> inside one <url>
+                      print(f"  Found broken <url> block with {len(locs)} <loc> elements – fixing …")
+                      for i, loc_el in enumerate(locs):
+                          lm_text = lastmods[i].text if i < len(lastmods) else ""
+                          entries.append((loc_el.text, lm_text))
+
+              # Rebuild the <urlset> with one <url> per entry
+              new_root = ET.Element(f"{{{SITEMAP_NS}}}urlset")
+              for loc_text, lastmod_text in entries:
+                  url_el = ET.SubElement(new_root, "url")
+                  loc_el = ET.SubElement(url_el, "loc")
+                  loc_el.text = loc_text
+                  if lastmod_text:
+                      lm_el = ET.SubElement(url_el, "lastmod")
+                      lm_el.text = lastmod_text
+
+              new_tree = ET.ElementTree(new_root)
+              ET.indent(new_tree, space="  ")
+              with open(filepath, "wb") as f:
+                  f.write(b'<?xml version="1.0" encoding="UTF-8"?>\n')
+                  new_tree.write(f, encoding="utf-8", xml_declaration=False)
+
+              print(f"  Written {len(entries)} <url> entries to {filepath}")
+
+          # Find and fix all sitemap.xml files (skip sitemap_index.xml)
+          fixed = 0
+          for dirpath, _, filenames in os.walk(DOCS_DIR):
+              for filename in filenames:
+                  if filename == "sitemap.xml":
+                      filepath = os.path.join(dirpath, filename)
+                      print(f"Checking: {filepath}")
+                      fix_sitemap(filepath)
+                      fixed += 1
+
+          print(f"\nDone. Processed {fixed} sitemap file(s).")
+          EOF
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --quiet docs/ || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit fixed sitemaps
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git commit -m "fix: repair malformed sitemap.xml structure [skip ci]"
+          git push
