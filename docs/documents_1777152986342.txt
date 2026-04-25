@@ -1,7 +1,7 @@
 {
     "/": {
         "title": "Startseite",
-        "text": "Startseite Hier findest Du hilfreiche Tipps und Anleitungen rund um Formenio. Du kannst bei \"Formular erstellen\" beginnen, oder suche Dir hier eins der folgenden häufig genutzten Themen aus. Logge dich ein! Um die Links in der Dokumentation nutzen zu können, logge dich ein, bevor du mit der Bearbeitung beginnst. Zum Login Formular erstellen Analytics Dein Thema ist nicht dabei oder du brauchst weitere Hilfe? Support"
+        "text": "Startseite Hier findest Du hilfreiche Tipps und Anleitungen rund um Formenio. Du kannst bei \"Formular erstellen\" beginnen, oder suche Dir hier eins der folgenden häufig genutzten Themen aus. Logge dich ein! Um die Links in der Dokumentation nutzen zu können, logge dich ein, bevor du mit der Bearbeitung beginnst. Zum Login Formular erstellen Formulareinstellungen Analytics Dein Thema ist nicht dabei oder du brauchst weitere Hilfe? Support"
     },
     "/dokumentation/formular-erstellen/": {
         "title": "Formular erstellen",
