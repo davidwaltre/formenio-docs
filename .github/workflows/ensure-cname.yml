@@ -1,0 +1,35 @@
+name: Ensure CNAME
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+
+jobs:
+  ensure-cname:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Write CNAME file
+        run: echo "docs.formenio.de" > docs/CNAME
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --quiet docs/CNAME || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit CNAME
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/CNAME
+          git commit -m "fix: restore CNAME for GitHub Pages [skip ci]"
+          git push
