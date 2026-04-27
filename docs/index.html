@@ -48,7 +48,7 @@ Du kannst bei "Formular erstellen" beginnen, oder suche Dir hier eins der folgen
     </style>
     <script>
         function getInitialTheme() {
-            const savedTheme = localStorage.getItem('theme') || 'dark';
+            const savedTheme = localStorage.getItem('theme') || 'system';
             if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
             return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         }
@@ -474,7 +474,7 @@ Du kannst bei "Formular erstellen" beginnen, oder suche Dir hier eins der folgen
                     
                     <div>
                         
-                            <a href="https://formenio.de"><span class="line-clamp-1">Formenio</span></a>
+                            <a href="https://docs.formenio.de"><span class="line-clamp-1">Formenio</span></a>
                         
                     </div>
                 </div>
@@ -659,7 +659,7 @@ Du kannst bei "Formular erstellen" beginnen, oder suche Dir hier eins der folgen
                                             <sl-tree-item 
                                                 id="CZ6FyLyckk5b-O3QiKMtU" 
                                                 style="--indent-level: 0"
-                                                expanded
+                                                
                                                 class="folder"
                                             >
                                                 <span>Formular teilen</span>
@@ -866,7 +866,7 @@ Du kannst bei "Formular erstellen" beginnen, oder suche Dir hier eins der folgen
                                             <sl-tree-item 
                                                 id="1tdY1fKxd32R5VZgkCzMd" 
                                                 style="--indent-level: 0"
-                                                expanded
+                                                
                                                 class="folder"
                                             >
                                                 <span>Analytics</span>
@@ -938,13 +938,13 @@ Du kannst bei "Formular erstellen" beginnen, oder suche Dir hier eins der folgen
             <article>
                 <main>
                     <div class="content">
-                        <h1 id="startseite" dir="ltr"><span style="white-space: pre-wrap;">Startseite</span></h1><p dir="ltr"><span style="white-space: pre-wrap;">Hier findest Du hilfreiche Tipps und Anleitungen rund um Formenio.</span><br><span style="white-space: pre-wrap;">Du kannst bei "Formular erstellen" beginnen, oder suche Dir hier eins der folgenden häufig genutzten Themen aus.</span></p><div class="callout-box-wrapper"><div class="callout-box" style="background-color: var(--sl-color-neutral-50); border: 1px solid var(--sl-color-neutral-200);"><div class="callout-box-icon"><sl-icon name="info-lg" style="color: var(--sl-color-neutral-400);"></sl-icon></div><div class="callout-box-content" style="color: var(--sl-color-neutral-600);"><p><b><strong style="white-space: pre-wrap;">Logge dich ein!</strong></b></p><p><span style="white-space: pre-wrap;">Um die Links in der Dokumentation nutzen zu können, logge dich ein, bevor du mit der Bearbeitung beginnst.</span></p><div class="action-button-wrapper"><sl-button variant="default" size="medium" class="default" href="https://formenio.de/dashboard" target="_blank"><div slot="prefix"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link-icon lucide-external-link"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></div><span>Zum Login</span></sl-button></div></div></div></div><ul><li value="1"><a href="/dokumentation/formular-erstellen/" rel="noreferrer"><span style="white-space: pre-wrap;">Formular erstellen</span></a></li><li value="2"><a href="/dokumentation/formular-bearbeiten/grundeinstellungen/" rel="noreferrer"><span style="white-space: pre-wrap;">Formulareinstellungen</span></a></li><li value="3"><a href="/dokumentation/analytics/analytics-allgemein/" rel="noreferrer"><span style="white-space: pre-wrap;">Analytics</span></a></li></ul><div class="callout-box-wrapper"><div class="callout-box" style="background-color: var(--sl-color-teal-50); border: 1px solid var(--sl-color-teal-200);"><div class="callout-box-icon"><sl-icon name="lightbulb" style="color: var(--sl-color-teal-400);"></sl-icon></div><div class="callout-box-content" style="color: var(--sl-color-teal-600);"><p><span style="white-space: pre-wrap;">Dein Thema ist nicht dabei oder du brauchst weitere Hilfe?</span></p><div class="action-button-wrapper"><sl-button variant="primary" size="medium" class="default" href="https://formenio.de/dashboard/support" target="_blank"><div slot="prefix"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-life-buoy-icon lucide-life-buoy"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path><circle cx="12" cy="12" r="4"></circle></svg></div><span>Support</span></sl-button></div></div></div></div>
+                        <h1 id="startseite" dir="ltr"><span style="white-space: pre-wrap;">Startseite</span></h1><p dir="ltr"><span style="white-space: pre-wrap;">Hier findest Du hilfreiche Tipps und Anleitungen rund um Formenio.</span><br><span style="white-space: pre-wrap;">Du kannst bei "Formular erstellen" beginnen, oder suche Dir hier eins der folgenden häufig genutzten Themen aus.</span></p><ul><li value="1"><a href="/dokumentation/formular-erstellen/" rel="noreferrer"><span style="white-space: pre-wrap;">Formular erstellen</span></a></li><li value="2"><a href="/dokumentation/formular-bearbeiten/grundeinstellungen/" rel="noreferrer"><span style="white-space: pre-wrap;">Formulareinstellungen</span></a></li><li value="3"><a href="/dokumentation/analytics/analytics-allgemein/" rel="noreferrer"><span style="white-space: pre-wrap;">Analytics</span></a></li></ul><div class="callout-box-wrapper"><div class="callout-box" style="background-color: var(--sl-color-neutral-50); border: 1px solid var(--sl-color-neutral-200);"><div class="callout-box-icon"><sl-icon name="info-lg" style="color: var(--sl-color-neutral-400);"></sl-icon></div><div class="callout-box-content" style="color: var(--sl-color-neutral-600);"><p><b><strong style="white-space: pre-wrap;">Logge dich ein!</strong></b></p><p><span style="white-space: pre-wrap;">Um die Links in der Dokumentation nutzen zu können, logge dich ein, bevor du mit der Bearbeitung beginnst.</span></p><div class="action-button-wrapper"><sl-button variant="default" size="medium" class="default" href="https://formenio.de/dashboard" target="_blank"><div slot="prefix"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link-icon lucide-external-link"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg></div><span>Zum Login</span></sl-button></div></div></div></div><div class="callout-box-wrapper"><div class="callout-box" style="background-color: var(--sl-color-teal-50); border: 1px solid var(--sl-color-teal-200);"><div class="callout-box-icon"><sl-icon name="lightbulb" style="color: var(--sl-color-teal-400);"></sl-icon></div><div class="callout-box-content" style="color: var(--sl-color-teal-600);"><p><span style="white-space: pre-wrap;">Dein Thema ist nicht dabei oder du brauchst weitere Hilfe?</span></p><div class="action-button-wrapper"><sl-button variant="primary" size="medium" class="default" href="https://formenio.de/dashboard/support" target="_blank"><div slot="prefix"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-life-buoy-icon lucide-life-buoy"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path><circle cx="12" cy="12" r="4"></circle></svg></div><span>Support</span></sl-button></div></div></div></div>
                     </div>
                 </main>
                 <div class="footer">
                     <div class="content">
                         <div class="date">
-                            <div>Apr 25, 2026</div>
+                            <div>Apr 27, 2026</div>
                         </div>
                          <div></div> 
                         
@@ -1023,8 +1023,8 @@ Du kannst bei "Formular erstellen" beginnen, oder suche Dir hier eins der folgen
     import {preInitTree} from 'https://docs.formenio.de/_lib/pre.js';
     preInitTree();
     await initPage();
-    await initTheme('dark');
-    await initSearch('https://docs.formenio.de', '1777152986342');
+    await initTheme('system');
+    await initSearch('https://docs.formenio.de', '1777296786374');
     document.documentElement.style.visibility = 'visible';
     document.documentElement.style.opacity = '1';
     initToc();

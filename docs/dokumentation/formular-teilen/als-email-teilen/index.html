@@ -45,7 +45,7 @@
     </style>
     <script>
         function getInitialTheme() {
-            const savedTheme = localStorage.getItem('theme') || 'dark';
+            const savedTheme = localStorage.getItem('theme') || 'system';
             if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
             return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         }
@@ -471,7 +471,7 @@
                     
                     <div>
                         
-                            <a href="https://formenio.de"><span class="line-clamp-1">Formenio</span></a>
+                            <a href="https://docs.formenio.de"><span class="line-clamp-1">Formenio</span></a>
                         
                     </div>
                 </div>
@@ -656,7 +656,7 @@
                                             <sl-tree-item 
                                                 id="CZ6FyLyckk5b-O3QiKMtU" 
                                                 style="--indent-level: 0"
-                                                expanded
+                                                
                                                 class="folder"
                                             >
                                                 <span>Formular teilen</span>
@@ -863,7 +863,7 @@
                                             <sl-tree-item 
                                                 id="1tdY1fKxd32R5VZgkCzMd" 
                                                 style="--indent-level: 0"
-                                                expanded
+                                                
                                                 class="folder"
                                             >
                                                 <span>Analytics</span>
@@ -941,7 +941,7 @@
                 <div class="footer">
                     <div class="content">
                         <div class="date">
-                            <div>Apr 25, 2026</div>
+                            <div>Apr 27, 2026</div>
                         </div>
                         
                             <a href="/dokumentation/formular-teilen/in-webseite-integrieren/" class="column left-column" title="In Webseite integrieren">
@@ -1032,8 +1032,8 @@
     import {preInitTree} from 'https://docs.formenio.de/_lib/pre.js';
     preInitTree();
     await initPage();
-    await initTheme('dark');
-    await initSearch('https://docs.formenio.de', '1777152986342');
+    await initTheme('system');
+    await initSearch('https://docs.formenio.de', '1777296786374');
     document.documentElement.style.visibility = 'visible';
     document.documentElement.style.opacity = '1';
     initToc();
