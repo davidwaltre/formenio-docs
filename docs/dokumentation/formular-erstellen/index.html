@@ -63,7 +63,7 @@ Somit hast Du ein neues Formular erstellt, welches an erster Position in deiner 
     </style>
     <script>
         function getInitialTheme() {
-            const savedTheme = localStorage.getItem('theme') || 'system';
+            const savedTheme = localStorage.getItem('theme') || 'dark';
             if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
             return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         }
@@ -489,7 +489,7 @@ Somit hast Du ein neues Formular erstellt, welches an erster Position in deiner 
                     
                     <div>
                         
-                            <a href="https://docs.formenio.de"><span class="line-clamp-1">Formenio</span></a>
+                            <a href="https://formenio.de"><span class="line-clamp-1">Formenio</span></a>
                         
                     </div>
                 </div>
@@ -674,7 +674,7 @@ Somit hast Du ein neues Formular erstellt, welches an erster Position in deiner 
                                             <sl-tree-item 
                                                 id="CZ6FyLyckk5b-O3QiKMtU" 
                                                 style="--indent-level: 0"
-                                                
+                                                expanded
                                                 class="folder"
                                             >
                                                 <span>Formular teilen</span>
@@ -745,7 +745,7 @@ Somit hast Du ein neues Formular erstellt, welches an erster Position in deiner 
                                             <sl-tree-item 
                                                 id="tPpiLFYn6VNXgjYTSwPnL" 
                                                 style="--indent-level: 0"
-                                                
+                                                expanded
                                                 class="folder"
                                             >
                                                 <span>Antworten</span>
@@ -881,7 +881,7 @@ Somit hast Du ein neues Formular erstellt, welches an erster Position in deiner 
                                             <sl-tree-item 
                                                 id="1tdY1fKxd32R5VZgkCzMd" 
                                                 style="--indent-level: 0"
-                                                
+                                                expanded
                                                 class="folder"
                                             >
                                                 <span>Analytics</span>
@@ -1050,8 +1050,8 @@ Somit hast Du ein neues Formular erstellt, welches an erster Position in deiner 
     import {preInitTree} from 'https://docs.formenio.de/_lib/pre.js';
     preInitTree();
     await initPage();
-    await initTheme('system');
-    await initSearch('https://docs.formenio.de', '1777296786374');
+    await initTheme('dark');
+    await initSearch('https://docs.formenio.de', '1777392273822');
     document.documentElement.style.visibility = 'visible';
     document.documentElement.style.opacity = '1';
     initToc();
