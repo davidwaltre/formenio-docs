@@ -20,16 +20,9 @@ jobs:
       - name: Write CNAME file
         run: echo "docs.formenio.de" > docs/CNAME
 
-      - name: Check for changes
-        id: check_changes
-        run: |
-          git diff --quiet docs/CNAME || echo "changed=true" >> $GITHUB_OUTPUT
-
       - name: Commit CNAME
-        if: steps.check_changes.outputs.changed == 'true'
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/CNAME
-          git commit -m "fix: restore CNAME for GitHub Pages [skip ci]"
-          git push
+          git diff --cached --quiet || git commit -m "fix: restore CNAME for GitHub Pages [skip ci]" && git push || true
