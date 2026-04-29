@@ -7,7 +7,7 @@
         Felder vorausfüllen - Dokumentation | Formenio - Online-Formulare einfach erstellen
     </title>
     <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="Felder vorausfüllen"/>
+    <meta name="description" content="Felder vorausfüllen. Es besteht die Möglichkeit, Formularfelder vorauszufüllen, sodass diese bereits bei Aufrufen des Formulars belegt sind. Dies ist bei Dateifeldern nicht möglich."/>
     <link rel="icon" type="image/svg+xml" href="https://docs.formenio.de/_images/favicon.ico"/>
     <link rel="icon" type="image/png" sizes="32x32" href="https://docs.formenio.de/_images/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="https://docs.formenio.de/_images/favicon.ico">    
@@ -16,12 +16,12 @@
     <meta property="og:url" content="https://docs.formenio.de/dokumentation/formular-teilen/felder-vorausfullen/">
     <meta property="og:title" content="Felder vorausfüllen - Dokumentation | Formenio - Online-Formulare einfach erstellen" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Felder vorausfüllen"/>
+    <meta property="og:description" content="Felder vorausfüllen. Es besteht die Möglichkeit, Formularfelder vorauszufüllen, sodass diese bereits bei Aufrufen des Formulars belegt sind. Dies ist bei Dateifeldern nicht möglich."/>
     
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:site" content=""/>
     <meta name="twitter:title" content="Felder vorausfüllen - Dokumentation | Formenio - Online-Formulare einfach erstellen" />
-    <meta name="twitter:description" content="Felder vorausfüllen" />
+    <meta name="twitter:description" content="Felder vorausfüllen. Es besteht die Möglichkeit, Formularfelder vorauszufüllen, sodass diese bereits bei Aufrufen des Formulars belegt sind. Dies ist bei Dateifeldern nicht möglich." />
     <meta name="twitter:image" content="https://docs.formenio.de"/>
 
     <link rel="canonical" href="https://docs.formenio.de/dokumentation/formular-teilen/felder-vorausfullen/">
@@ -935,13 +935,13 @@
             <article>
                 <main>
                     <div class="content">
-                        <h1 id="/felder-vorausfullen" dir="ltr"><span style="white-space: pre-wrap;">Felder vorausfüllen</span></h1>
+                        <h1 id="felder-vorausfullen" dir="ltr"><span style="white-space: pre-wrap;">Felder vorausfüllen</span></h1><p dir="ltr"><span style="white-space: pre-wrap;">Es besteht die Möglichkeit, Formularfelder vorauszufüllen, sodass diese bereits bei Aufrufen des Formulars belegt sind. Dies ist bei Dateifeldern nicht möglich.</span></p><p dir="ltr"><span style="white-space: pre-wrap;">Mögliche Anwendungsfälle sind beispielsweise:</span></p><ul><li value="1"><span style="white-space: pre-wrap;">Eine Email von Bearbeiter X wird an Kunden versendet. In dieser Email ist ein Link zu einem allgemeinen Feedback-Formular:</span><br><span style="white-space: pre-wrap;">Hier bietet es sich an, ein verstecktes Feld mit Bearbeiterkennung einzuführen. Dieses Feld kann versteckt und vorausgefüllt sein. So können MitarbeiterInnen zugeordnet werden, ohne dies dem/der NutzerIn anzuzeigen.</span></li><li value="2"><span style="white-space: pre-wrap;">Über einen QR-Code Scan kann beispielsweise auch auf gleichem Weg der Ort des QR-Codes hinterlegt werden</span></li><li value="3"><span style="white-space: pre-wrap;">KundInnen-Emails können so vorausgefüllt sein, auch in Verbindung mit deaktivierten Feldern. Somit sind Antworten zu KundInnen verfolgbar</span></li><li value="4"><span style="white-space: pre-wrap;">u.v.m.</span></li></ul><p dir="ltr"><span style="white-space: pre-wrap;">Das Vorausfüllen ist einfach gestaltet.</span></p><hr><h2 id="felder-vorausfullen-(einfache-variante)" dir="ltr"><span style="white-space: pre-wrap;">Felder vorausfüllen (einfache Variante)</span></h2><p dir="ltr"><span style="white-space: pre-wrap;">Im Teilen-Dialog des Formulars kann ganz unten ein Feld hinzugefügt werden, das vorausgefüllt werden soll (Button "Feld hinzufügen" unter "Felder vorausfüllen").</span></p><p dir="ltr"><span style="white-space: pre-wrap;">Hier kann das entsprechende Feld ausgewählt werden und ein Wert kann vergeben werden.</span></p><p dir="ltr"><span style="white-space: pre-wrap;">Alle eingegebenen Werte werden </span><b><strong class="text-bold" style="white-space: pre-wrap;">direkt </strong></b><span style="white-space: pre-wrap;">auf </span><b><strong class="text-bold" style="white-space: pre-wrap;">jede Teilmöglichkeit</strong></b><span style="white-space: pre-wrap;"> angewendet (auch QR-Codes)!</span></p><p dir="ltr"><span style="white-space: pre-wrap;">Die hier getroffenen Vorausfüllungen werden </span><b><strong class="text-bold" style="white-space: pre-wrap;">nicht dauerhaft gespeichert</strong></b><span style="white-space: pre-wrap;">, sind also bei Aktualisierung der Seite nicht mehr vorhanden (jedoch funktionieren Links und QR-Codes mit diesen Vorausfüllungen weiterhin!).</span></p><p dir="ltr"><br></p><h2 id="felder-vorausfullen-(mit-code)" dir="ltr"><span style="white-space: pre-wrap;">Felder vorausfüllen (mit Code)</span></h2><p dir="ltr"><span style="white-space: pre-wrap;">Felder können auch automatisch vorausgefüllt werden, hier sind jedoch (je nach implementierung) Programmierkenntnisse notwendig.</span></p><p dir="ltr"><span style="white-space: pre-wrap;">Der Link zu Formularen folgt dem Schema:</span></p><p dir="ltr"><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">https://(SUB)DOMAIN/FORMULAR_LINK/</span></code><br><span style="white-space: pre-wrap;">Hieran können als Parameter angehängt werden:</span></p><ul><li value="1"><span style="white-space: pre-wrap;">utm_source (</span><a href="/dokumentation/analytics/analytics-funktionen/" rel="noreferrer"><span style="white-space: pre-wrap;">Auswertung bei Analytics</span></a><span style="white-space: pre-wrap;">)</span></li><li value="2"><span style="white-space: pre-wrap;">vorausgefüllte Felder (URI encoded) im Format </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">FeldID=WERT</span></code><span style="white-space: pre-wrap;"> </span><br><span style="white-space: pre-wrap;">Dabei sind Werte URI encoded. </span><br><span style="white-space: pre-wrap;">Bei Auswahlfeldern sind Auswahlmöglichkeiten per Komma getrennt und als deren ID angegeben. Jede ID kann in dem Bearbeitungsdialog des jeweiligen Feldes abgerufen werden (hierbei Wert-ID ohne die </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">{{</span></code><span style="white-space: pre-wrap;"> und </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">}}</span></code></li></ul>
                     </div>
                 </main>
                 <div class="footer">
                     <div class="content">
                         <div class="date">
-                            <div>Apr 28, 2026</div>
+                            <div>Apr 29, 2026</div>
                         </div>
                         
                             <a href="/dokumentation/formular-teilen/als-email-teilen/" class="column left-column" title="Als Email teilen">
@@ -974,6 +974,28 @@
             </article>
             <aside class="toc">
                 <nav class="toc">
+                    
+                    <div class="title">
+                        <sl-icon class="icon" name="list-nested"></sl-icon>
+                        <div>
+                            On this page
+                        </div>
+                    </div>
+                    <div id="toc-list" class="list">
+                        
+                            
+                                <div class="heading-2 line-clamp-2">
+                                    <a href="/dokumentation/formular-teilen/felder-vorausfullen/#felder-vorausfullen-(einfache-variante)">Felder vorausfüllen (einfache Variante)</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-2 line-clamp-2">
+                                    <a href="/dokumentation/formular-teilen/felder-vorausfullen/#felder-vorausfullen-(mit-code)">Felder vorausfüllen (mit Code)</a>
+                                </div>
+                                
+                        
+                    </div>
                     
                 </nav>
             </aside>
@@ -1033,7 +1055,7 @@
     preInitTree();
     await initPage();
     await initTheme('dark');
-    await initSearch('https://docs.formenio.de', '1777392273822');
+    await initSearch('https://docs.formenio.de', '1777446923433');
     document.documentElement.style.visibility = 'visible';
     document.documentElement.style.opacity = '1';
     initToc();
