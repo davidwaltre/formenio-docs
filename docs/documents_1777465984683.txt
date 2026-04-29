@@ -57,35 +57,35 @@
     },
     "/dokumentation/antworten/ans/": {
         "title": "Ansehen",
-        "text": "Ansehen"
+        "text": "Ansehen Um die Antworten eines Formulars anzusehen, klicke auf \" Antworten \" in der Seitenleiste und wähle das Formular aus. Hier siehst Du eine Tabelle mit den Antworten, die bisher in dem Formular eingegangen sind. Du kannst die Antworten Filtern, Spalten ausblenden (hilfreich bei vielen Feldern), Antworten  löschen  und  exportieren . Antworten filtern Antworten sind einfach filterbar. Du kannst ein Feld auswählen, nach dessen Wert Du filtern möchtest. Beispielsweise wählst Du \"Mein Textfeld\" als Textfeld aus, gibst \"Beispielwert\" ein und klickst auf die Lupe, werden alle Antworten angezeigt, die \"Beispielwert\" in diesem Feld enthalten. Du kannst auch nach mehreren Feldern gleichzeitig filtern, indem Du das Feld in der Auswahl wechselst. Der Suchbegriff in allen anderen Feldern bleibt hierbei erhalten. Möchtest Du alle Filter löschen, klicke auf das Filter löschen Symbol neben der Lupe. Spalten ausblenden und sortieren Hat Dein Formular viele Felder, wird die Tabelle schnell überfüllt. Mit dem Spalten-Bearbeitungs Symbol ganz rechts kannst Du Spalten aus- und einblenden. Mit Klick auf einen Feldnamen, kannst Du die jeweilige Spalte sortieren. Dateien herunterladen Um Dateien herunterzuladen, die abgesendet wurden, klicke auf den blauen Download-Button neben dem Dateinamen. Tipp: Wenn Du Dateifelder im Workflow per Email versendest, wird ein Downloadlink direkt verschickt. Zu Dateien: Achte immer darauf, welche Dateien Du herunterlädst und öffnest. Scheint eine Datei merkwürdig zu sein, scanne sie mit einem Antivirusprogramm."
     },
     "/dokumentation/antworten/exportieren/": {
         "title": "Exportieren",
-        "text": "Exportieren"
+        "text": "Exportieren Du kannst Antworten ganz einfach in der Ansicht als CSV-Dateien exportieren. Klicke hierzu auf: \"Alle als CSV Herunterladen\" um alle Antworten herunterzuladen Warnung: Bei vielen Antworten kann die Datei sehr groß werden \"Suchergebnisse als CSV Herunterladen\" um die gefilterten Antworten, die Du siehst, herunterzuladen Um Dateien in bestehende Systeme zu integrieren oder anderweitig zu nutzen, wähle  Workflows ."
     },
     "/dokumentation/antworten/loschen/": {
         "title": "Löschen",
-        "text": "Löschen"
+        "text": "Löschen Du kannst Antworten löschen, indem Du in der Antworttabelle auf die drei Punkte neben einer Antwort klickst und auf löschen klickst. Achtung!! Dies kann nicht rückgängig gemacht werden.   Wir behalten keine Kopie der Antworten zur eventuellen Wiederherstellung! Auch alle Dateien der Antwort werden somit gelöscht!"
     },
     "/dokumentation/workflows/workflow-erstellen/": {
         "title": "Workflow erstellen",
-        "text": "Workflow erstellen"
+        "text": "Workflow erstellen Für jedes Formular können Workflows erstellt werden. Die Workflows sind zu finden in der Seitenleiste unter \" Workflows \". Hier kann das jeweilige Formular ausgewählt werden. Um einen Workflow zu erstellen, klicke auf \"Neuer Workflow\". Hier gibt es nun - genau wie bei dem Bearbeiten eines Workflows - zwei Schritte: Schritt 1 - Trigger Setze hier einen Namen und wähle aus, ob ein Workflow aktiv sein soll. Hier legst Du außerdem fest, wann ein Workflow auslösen soll. Standardmäßig ist der Workflow bei Absenden eines Formulars aktiv (Trigger: Bei Absenden). Das bedeutet, bei jedem Absenden des Formulars, werden die in Schritt 2 festgelegten Actions ausgeführt. Änderst Du den Trigger auf \"Bei Absenden mit Bedingung\", kannst Du festlegen, wann die Actions ausgeführt werden sollen. Dies kann beispiel sein, wenn Feld X nicht leer ist, oder wenn es einen bestimmten Text enthält. Bedingungen werden der Reihe nach geprüft. Für ein Feld können mehrere Bedingungen bestehen. Schritt 2 - Actions Hier kannst du festlegen, was der Workflow ausführen soll. Mehr dazu unter \"Aktionen\". Actions werden ebenso  der Reihe nach  ausgeführt."
     },
     "/dokumentation/workflows/aktionen/email-senden/": {
         "title": "Email senden",
-        "text": "Email senden"
+        "text": "Email senden Du kannst eine Email senden, die per Workflow an bestimmte Empfänger gesendet wird. Klicke hierzu unter Schritt 2 auf \"Email senden\" und fülle aus: Empfänger:  Hier können Empfänger der Email festgelegt werden. Du kannst Email-Adressen manuell eintragen oder diese aus einem Feld übernehmen. Du kannst so beispielsweise an Dich selbst eine Email schreiben sobald eine neue Antwort ankommt, aber auch an die / den AbsenderIn eine Eingangsbestätigung senden. Betreff:  Setze hier den Betreff der Email. Du kannst einen eigenen Text eingeben sowie Textvariablen aus Antwortfeldern einsetzen. Nutze die Funktion \"Variable einfügen\" oder kopiere die WertID aus dem Feldeditor hier hin. Nachricht:  Diese Nachricht wird versendet. Standardmäßig ist hier eine Nachricht enthalten, die alle Antwortfelder enthält. Du kannst diese beliebig anpassen. Beachte: HTML funktioniert hier nicht. Auch hier kannst Du Variablen verwenden!"
     },
     "/dokumentation/workflows/aktionen/feld-updaten/": {
         "title": "Feld updaten",
-        "text": "Feld updaten"
+        "text": "Feld updaten Nutze diese Action, um den Wert eines Antwortfeldes zu ändern. Dies ändert direkt den Wert einer Antwort. Eingegebene Daten gehen hier verloren. Beachte , dass Actions der Reihe nach ausgeführt werden."
     },
     "/dokumentation/workflows/aktionen/status-setzen/": {
         "title": "Status setzen",
-        "text": "Status setzen"
+        "text": "Status setzen Jede Antwort hat als Attribut einen Status. Dieser Status kann weder direkt von Dir bearbeitet oder eingesehen werden, noch kann er von NutzerInnen beeinflusst werden. Über das Webhook Event  form.submitted  ist dieser Status abrufbar, und kann über diese Workflow-Action (Status setzen) geändert werden. Für spezielle Anwendungszwecke vorgesehen, erfüllt dieser Status jedoch  noch keine  wichtige Funktion."
     },
     "/dokumentation/workflows/aktionen/event-webhook/": {
         "title": "Event webhook",
-        "text": "Event webhook"
+        "text": "Event webhook Event Webhooks bieten einen Weg, über Änderungen benachrichtigt zu werden. Die Nutzung dieser Funktion ohne Programmierkenntnisse kann anspruchsvoller sein. Wenn Du Fragen hast, melde Dich gerne bei uns. Aktuell gibt es das Event  form.submitted . Dieses Event kann per  Event Webhook  Workflow Action gesendet werden. Das Event sendet Daten der gesendeten Antwort an den angegebenen Endpunkt. Formenio sendet ein Secret als Header mit:  formenio: workflow-id Du siehst die Workflow ID nach speichern des Workflows. Stelle so sicher, dass die Anfrage wirklich von Formenio stammt. Hier ist ein Beispiel Event, das gesendet werden könnte: JSON { \n    \"event\" : \"form.submitted\" , \n    \"formId\" : \"69f1f9359b009a4048d629e4\" , \n    \"responseId\" : \"2ed39c31-a9f9-4c34-9120-3a35f3a09415\" , \n    \"fields\" :{ \n       \"harswmkul\" :{ \n          \"label\" : \"Textfeld Beispiel\" , \n          \"type\" : \"text\" , \n          \"value\" : \"Eingabetext\" \n       }, \n       \"rn1juqvwg\" :{ \n          \"label\" : \"Kartenauswahl\" , \n          \"type\" : \"cardSelect\" , \n          \"value\" : \"Option 2\" \n       }, \n       \"c7o9wpmuk\" :{ \n          \"label\" : \"Dateifeld Beispiel\" , \n          \"type\" : \"file\" , \n          \"value\" :[ \n             \"testfile2.txt\" \n          ] \n       } \n    }, \n    \"status\" : null , \n    \"submittedAt\" : \"2026-04-29T12:30:09.268Z\" , \n    \"timestamp\" : \"2026-04-29T12:30:09.273Z\" \n } Weitere Events sind geplant, jedoch noch nicht umgesetzt. Bei Fragen zu Webhooks, melde Dich gerne direkt bei uns:  support@formenio.de"
     },
     "/dokumentation/analytics/analytics-allgemein/": {
         "title": "Allgemein",

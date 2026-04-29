@@ -7,7 +7,7 @@
         Event webhook - Dokumentation | Formenio - Online-Formulare einfach erstellen
     </title>
     <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="Event webhook"/>
+    <meta name="description" content="Event webhook. Event Webhooks bieten einen Weg, über Änderungen benachrichtigt zu werden."/>
     <link rel="icon" type="image/svg+xml" href="https://docs.formenio.de/_images/favicon.ico"/>
     <link rel="icon" type="image/png" sizes="32x32" href="https://docs.formenio.de/_images/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="https://docs.formenio.de/_images/favicon.ico">    
@@ -16,12 +16,12 @@
     <meta property="og:url" content="https://docs.formenio.de/dokumentation/workflows/aktionen/event-webhook/">
     <meta property="og:title" content="Event webhook - Dokumentation | Formenio - Online-Formulare einfach erstellen" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Event webhook"/>
+    <meta property="og:description" content="Event webhook. Event Webhooks bieten einen Weg, über Änderungen benachrichtigt zu werden."/>
     
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:site" content=""/>
     <meta name="twitter:title" content="Event webhook - Dokumentation | Formenio - Online-Formulare einfach erstellen" />
-    <meta name="twitter:description" content="Event webhook" />
+    <meta name="twitter:description" content="Event webhook. Event Webhooks bieten einen Weg, über Änderungen benachrichtigt zu werden." />
     <meta name="twitter:image" content="https://docs.formenio.de"/>
 
     <link rel="canonical" href="https://docs.formenio.de/dokumentation/workflows/aktionen/event-webhook/">
@@ -563,7 +563,7 @@
                                             <sl-tree-item 
                                                 id="SLiYrX12fPB8St5Fq6tCn" 
                                                 style="--indent-level: 0"
-                                                expanded
+                                                
                                                 class="folder"
                                             >
                                                 <span>Formular bearbeiten</span>
@@ -656,7 +656,7 @@
                                             <sl-tree-item 
                                                 id="CZ6FyLyckk5b-O3QiKMtU" 
                                                 style="--indent-level: 0"
-                                                expanded
+                                                
                                                 class="folder"
                                             >
                                                 <span>Formular teilen</span>
@@ -776,7 +776,7 @@
                                             <sl-tree-item 
                                                 id="hdhUSKs0WB4-FGlskIFKl" 
                                                 style="--indent-level: 0"
-                                                
+                                                expanded
                                                 class="folder"
                                             >
                                                 <span>Workflows</span>
@@ -863,7 +863,7 @@
                                             <sl-tree-item 
                                                 id="1tdY1fKxd32R5VZgkCzMd" 
                                                 style="--indent-level: 0"
-                                                expanded
+                                                
                                                 class="folder"
                                             >
                                                 <span>Analytics</span>
@@ -935,7 +935,59 @@
             <article>
                 <main>
                     <div class="content">
-                        <h1 id="/event-webhook" dir="ltr"><span style="white-space: pre-wrap;">Event webhook</span></h1>
+                        <h1 id="event-webhook" dir="ltr"><span style="white-space: pre-wrap;">Event webhook</span></h1><p dir="ltr"><span style="white-space: pre-wrap;">Event Webhooks bieten einen Weg, über Änderungen benachrichtigt zu werden.</span></p><p dir="ltr"><span style="white-space: pre-wrap;">Die Nutzung dieser Funktion ohne Programmierkenntnisse kann anspruchsvoller sein. Wenn Du Fragen hast, melde Dich gerne bei uns.</span></p><p dir="ltr"><span style="white-space: pre-wrap;">Aktuell gibt es das Event </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">form.submitted</span></code><span style="white-space: pre-wrap;">. Dieses Event kann per </span><i><em class="text-italic" style="white-space: pre-wrap;">Event Webhook</em></i><span style="white-space: pre-wrap;"> Workflow Action gesendet werden.</span></p><p dir="ltr"><span style="white-space: pre-wrap;">Das Event sendet Daten der gesendeten Antwort an den angegebenen Endpunkt.</span></p><p dir="ltr"><span style="white-space: pre-wrap;">Formenio sendet ein Secret als Header mit: </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">formenio: workflow-id</span></code></p><p dir="ltr"><span style="white-space: pre-wrap;">Du siehst die Workflow ID nach speichern des Workflows. Stelle so sicher, dass die Anfrage wirklich von Formenio stammt.</span></p><p dir="ltr"><span style="white-space: pre-wrap;">Hier ist ein Beispiel Event, das gesendet werden könnte:</span></p><p><br></p><div class="code-block"><div class="toolbar-cell"><div class="language-title">JSON</div><div><sl-copy-button value="{
+   &quot;event&quot;:&quot;form.submitted&quot;,
+   &quot;formId&quot;:&quot;69f1f9359b009a4048d629e4&quot;,
+   &quot;responseId&quot;:&quot;2ed39c31-a9f9-4c34-9120-3a35f3a09415&quot;,
+   &quot;fields&quot;:{
+      &quot;harswmkul&quot;:{
+         &quot;label&quot;:&quot;Textfeld Beispiel&quot;,
+         &quot;type&quot;:&quot;text&quot;,
+         &quot;value&quot;:&quot;Eingabetext&quot;
+      },
+      &quot;rn1juqvwg&quot;:{
+         &quot;label&quot;:&quot;Kartenauswahl&quot;,
+         &quot;type&quot;:&quot;cardSelect&quot;,
+         &quot;value&quot;:&quot;Option 2&quot;
+      },
+      &quot;c7o9wpmuk&quot;:{
+         &quot;label&quot;:&quot;Dateifeld Beispiel&quot;,
+         &quot;type&quot;:&quot;file&quot;,
+         &quot;value&quot;:[
+            &quot;testfile2.txt&quot;
+         ]
+      }
+   },
+   &quot;status&quot;:null,
+   &quot;submittedAt&quot;:&quot;2026-04-29T12:30:09.268Z&quot;,
+   &quot;timestamp&quot;:&quot;2026-04-29T12:30:09.273Z&quot;
+}" copy-label="Copy to clipboard" success-label="The code is copied to clipboard"></sl-copy-button></div></div><div class="code-cell" style="height: 704.4px;"><div class="container"><pre class="shiki shiki-themes" style="background-color:#f1f5f9;--shiki-dark-bg:#0d1117;color:#1f2328;--shiki-dark:#e6edf3" tabindex="0"><code class="code-view"><span class="line" data-line="1"><span style="color:#1F2328;--shiki-dark:#E6EDF3">{</span></span>
+<span class="line" data-line="2"><span style="color:#116329;--shiki-dark:#7EE787">   "event"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="color:#0A3069;--shiki-dark:#A5D6FF">"form.submitted"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span class="line" data-line="3"><span style="color:#116329;--shiki-dark:#7EE787">   "formId"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="color:#0A3069;--shiki-dark:#A5D6FF">"69f1f9359b009a4048d629e4"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span class="line" data-line="4"><span style="color:#116329;--shiki-dark:#7EE787">   "responseId"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="color:#0A3069;--shiki-dark:#A5D6FF">"2ed39c31-a9f9-4c34-9120-3a35f3a09415"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span class="line" data-line="5"><span style="color:#116329;--shiki-dark:#7EE787">   "fields"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:{</span></span>
+<span class="line" data-line="6"><span style="color:#116329;--shiki-dark:#7EE787">      "harswmkul"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:{</span></span>
+<span class="line" data-line="7"><span style="color:#116329;--shiki-dark:#7EE787">         "label"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="color:#0A3069;--shiki-dark:#A5D6FF">"Textfeld Beispiel"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span class="line" data-line="8"><span style="color:#116329;--shiki-dark:#7EE787">         "type"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="color:#0A3069;--shiki-dark:#A5D6FF">"text"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span class="line" data-line="9"><span style="color:#116329;--shiki-dark:#7EE787">         "value"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="color:#0A3069;--shiki-dark:#A5D6FF">"Eingabetext"</span></span>
+<span class="line" data-line="10"><span style="color:#1F2328;--shiki-dark:#E6EDF3">      },</span></span>
+<span class="line" data-line="11"><span style="color:#116329;--shiki-dark:#7EE787">      "rn1juqvwg"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:{</span></span>
+<span class="line" data-line="12"><span style="color:#116329;--shiki-dark:#7EE787">         "label"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="color:#0A3069;--shiki-dark:#A5D6FF">"Kartenauswahl"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span class="line" data-line="13"><span style="color:#116329;--shiki-dark:#7EE787">         "type"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="color:#0A3069;--shiki-dark:#A5D6FF">"cardSelect"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span class="line" data-line="14"><span style="color:#116329;--shiki-dark:#7EE787">         "value"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="color:#0A3069;--shiki-dark:#A5D6FF">"Option 2"</span></span>
+<span class="line" data-line="15"><span style="color:#1F2328;--shiki-dark:#E6EDF3">      },</span></span>
+<span class="line" data-line="16"><span style="color:#116329;--shiki-dark:#7EE787">      "c7o9wpmuk"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:{</span></span>
+<span class="line" data-line="17"><span style="color:#116329;--shiki-dark:#7EE787">         "label"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="color:#0A3069;--shiki-dark:#A5D6FF">"Dateifeld Beispiel"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span class="line" data-line="18"><span style="color:#116329;--shiki-dark:#7EE787">         "type"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="color:#0A3069;--shiki-dark:#A5D6FF">"file"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span class="line" data-line="19"><span style="color:#116329;--shiki-dark:#7EE787">         "value"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:[</span></span>
+<span class="line" data-line="20"><span style="color:#0A3069;--shiki-dark:#A5D6FF">            "testfile2.txt"</span></span>
+<span class="line" data-line="21"><span style="color:#1F2328;--shiki-dark:#E6EDF3">         ]</span></span>
+<span class="line" data-line="22"><span style="color:#1F2328;--shiki-dark:#E6EDF3">      }</span></span>
+<span class="line" data-line="23"><span style="color:#1F2328;--shiki-dark:#E6EDF3">   },</span></span>
+<span class="line" data-line="24"><span style="color:#116329;--shiki-dark:#7EE787">   "status"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="color:#0550AE;--shiki-dark:#79C0FF">null</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span class="line" data-line="25"><span style="color:#116329;--shiki-dark:#7EE787">   "submittedAt"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="color:#0A3069;--shiki-dark:#A5D6FF">"2026-04-29T12:30:09.268Z"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">,</span></span>
+<span class="line" data-line="26"><span style="color:#116329;--shiki-dark:#7EE787">   "timestamp"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">:</span><span style="color:#0A3069;--shiki-dark:#A5D6FF">"2026-04-29T12:30:09.273Z"</span></span>
+<span class="line" data-line="27"><span style="color:#1F2328;--shiki-dark:#E6EDF3">}</span></span></code></pre></div></div></div><p><br></p><p dir="ltr"><span style="white-space: pre-wrap;">Weitere Events sind geplant, jedoch noch nicht umgesetzt.</span></p><p dir="ltr"><span style="white-space: pre-wrap;">Bei Fragen zu Webhooks, melde Dich gerne direkt bei uns: </span><b><strong class="text-bold" style="white-space: pre-wrap;">support@formenio.de</strong></b></p>
                     </div>
                 </main>
                 <div class="footer">
@@ -1033,7 +1085,7 @@
     preInitTree();
     await initPage();
     await initTheme('dark');
-    await initSearch('https://docs.formenio.de', '1777447777519');
+    await initSearch('https://docs.formenio.de', '1777465984683');
     document.documentElement.style.visibility = 'visible';
     document.documentElement.style.opacity = '1';
     initToc();
