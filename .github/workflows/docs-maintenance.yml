@@ -1,4 +1,4 @@
-name: Fix Sitemaps
+name: Docs Maintenance
 
 on:
   push:
@@ -8,14 +8,16 @@ on:
       - 'docs/**'
 
 jobs:
-  fix-sitemaps:
+  docs-maintenance:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Write CNAME file
+        run: echo "docs.formenio.de" > docs/CNAME
 
       - name: Fix sitemap XML structure
         run: |
@@ -35,7 +37,6 @@ jobs:
               """
               tree = ET.parse(filepath)
               root = tree.getroot()
-
               tag_url     = f"{{{SITEMAP_NS}}}url"
               tag_loc     = f"{{{SITEMAP_NS}}}loc"
               tag_lastmod = f"{{{SITEMAP_NS}}}lastmod"
@@ -45,7 +46,6 @@ jobs:
               for url_el in root.findall(tag_url):
                   locs     = url_el.findall(tag_loc)
                   lastmods = url_el.findall(tag_lastmod)
-
                   if len(locs) <= 1:
                       # Already correct – keep as-is
                       loc_text     = locs[0].text if locs else ""
@@ -73,7 +73,6 @@ jobs:
               with open(filepath, "wb") as f:
                   f.write(b'<?xml version="1.0" encoding="UTF-8"?>\n')
                   new_tree.write(f, encoding="utf-8", xml_declaration=False)
-
               print(f"  Written {len(entries)} <url> entries to {filepath}")
 
           # Find and fix all sitemap.xml files (skip sitemap_index.xml)
@@ -85,20 +84,12 @@ jobs:
                       print(f"Checking: {filepath}")
                       fix_sitemap(filepath)
                       fixed += 1
-
           print(f"\nDone. Processed {fixed} sitemap file(s).")
           EOF
 
-      - name: Check for changes
-        id: check_changes
-        run: |
-          git diff --quiet docs/ || echo "changed=true" >> $GITHUB_OUTPUT
-
-      - name: Commit fixed sitemaps
-        if: steps.check_changes.outputs.changed == 'true'
+      - name: Commit changes
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/
-          git commit -m "fix: repair malformed sitemap.xml structure [skip ci]"
-          git push
+          git diff --cached --quiet || git commit -m "fix: restore CNAME and repair sitemap.xml structure [skip ci]" && git push || true
