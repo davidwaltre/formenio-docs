@@ -45,7 +45,7 @@
     </style>
     <script>
         function getInitialTheme() {
-            const savedTheme = localStorage.getItem('theme') || 'dark';
+            const savedTheme = localStorage.getItem('theme') || 'system';
             if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
             return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         }
@@ -403,6 +403,43 @@
                                     
                                         
                                             <sl-tree-item 
+                                                id="IclpY2K37kEsYmrGtBSaX" 
+                                                style="--indent-level: 0"
+                                                class="folder"
+                                            >
+                                                <span>Integrationen</span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="fjpwQ20LeDc4xkNCgdF2b" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/dokumentation/integrationen/google-sheets/">Google Sheets</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="WsrmjM46JMscFt9V73hEF" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/dokumentation/integrationen/calendly/">Calendly</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
                                                 id="1tdY1fKxd32R5VZgkCzMd" 
                                                 style="--indent-level: 0"
                                                 class="folder"
@@ -563,7 +600,7 @@
                                             <sl-tree-item 
                                                 id="SLiYrX12fPB8St5Fq6tCn" 
                                                 style="--indent-level: 0"
-                                                
+                                                expanded
                                                 class="folder"
                                             >
                                                 <span>Formular bearbeiten</span>
@@ -861,6 +898,44 @@
                                     
                                         
                                             <sl-tree-item 
+                                                id="IclpY2K37kEsYmrGtBSaX" 
+                                                style="--indent-level: 0"
+                                                expanded
+                                                class="folder"
+                                            >
+                                                <span>Integrationen</span>
+                                                
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="fjpwQ20LeDc4xkNCgdF2b" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/dokumentation/integrationen/google-sheets/">Google Sheets</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="WsrmjM46JMscFt9V73hEF" 
+                                            style="--indent-level: 1"
+                                            
+                                            class="leaf"
+                                        >
+                                            <a href="/dokumentation/integrationen/calendly/">Calendly</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                             
+                                            </sl-tree-item>
+                                                                                
+                                    
+                                
+                                    
+                                        
+                                            <sl-tree-item 
                                                 id="1tdY1fKxd32R5VZgkCzMd" 
                                                 style="--indent-level: 0"
                                                 
@@ -1020,8 +1095,8 @@
     import {preInitTree} from 'https://docs.formenio.de/_lib/pre.js';
     preInitTree();
     await initPage();
-    await initTheme('dark');
-    await initSearch('https://docs.formenio.de', '1777466143736');
+    await initTheme('system');
+    await initSearch('https://docs.formenio.de', '1787572819153');
     document.documentElement.style.visibility = 'visible';
     document.documentElement.style.opacity = '1';
     initToc();

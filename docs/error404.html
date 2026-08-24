@@ -30,7 +30,7 @@
     </style>
     <script>
         function getInitialTheme() {
-            const savedTheme = localStorage.getItem('theme') || 'dark';
+            const savedTheme = localStorage.getItem('theme') || 'system';
             if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
             return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         }
@@ -189,8 +189,8 @@
     import {preInitTree} from 'https://docs.formenio.de/_lib/pre.js';
     preInitTree();
     await initPage();
-    await initTheme('dark');
-    await initSearch('https://docs.formenio.de', '1777466143736');
+    await initTheme('system');
+    await initSearch('https://docs.formenio.de', '1787572819153');
     document.documentElement.style.visibility = 'visible';
     document.documentElement.style.opacity = '1';
     initToc();
