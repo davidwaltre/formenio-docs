@@ -1,4 +1,5 @@
+# https://docs.formenio.de
 User-agent: *
 Allow: /
 
-Sitemap: https://docs.formenio.de/sitemap_index.xml
+Sitemap: https://docs.formenio.de/sitemap.xml
